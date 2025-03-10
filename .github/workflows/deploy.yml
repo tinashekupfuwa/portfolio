@@ -21,15 +21,17 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
+        working-directory: ./builder-app
         run: npm ci
 
       - name: Build
+        working-directory: ./builder-app
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./builder-app/out
 
   deploy:
     environment:
