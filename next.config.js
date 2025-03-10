@@ -6,6 +6,7 @@ const nextConfig = {
   },
   basePath: "/portfolio",
   assetPrefix: "/portfolio/",
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;

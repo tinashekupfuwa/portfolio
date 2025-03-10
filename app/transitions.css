@@ -1,0 +1,104 @@
+/* Page transition styles */
+.page-transition {
+  animation: pageEnter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover effect */
+.button-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.button-hover:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.3));
+}
+
+/* Attention drawing animation */
+@keyframes attentionDraw {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #4a4a4a;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+    color: #8b5cf6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    color: #4a4a4a;
+  }
+}
+
+.attention-draw {
+  animation: attentionDraw 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Pulsing animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Link hover transitions */
+.hover-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-transition:hover {
+  transform: translateY(-2px);
+}
+
+/* Scale transition for clickable elements */
+.scale-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-transition:hover {
+  transform: scale(1.05);
+}
+
+/* Underline transition */
+.underline-transition {
+  position: relative;
+}
+
+.underline-transition::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-transition:hover::after {
+  width: 100%;
+}
