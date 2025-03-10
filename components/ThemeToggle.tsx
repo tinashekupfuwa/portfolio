@@ -4,14 +4,10 @@ import * as React from "react";
 import { useTheme } from "@/context/ThemeContext";
 
 export const ThemeToggle: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="fixed top-5 right-5 p-2 rounded-full bg-[#4A4A4A] dark:bg-white text-white dark:text-[#4A4A4A] transition-colors duration-300 hover:scale-110"
-      aria-label="Toggle theme"
-    >
+    <div className="fixed top-5 right-5 p-2 rounded-full bg-[#4A4A4A] dark:bg-white text-white dark:text-[#4A4A4A] transition-colors duration-300">
       {theme === "light" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +39,6 @@ export const ThemeToggle: React.FC = () => {
           />
         </svg>
       )}
-    </button>
+    </div>
   );
 };

@@ -1,13 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio/",
   reactStrictMode: true,
   swcMinify: true,
+  output: "export",
+  basePath: "/portfolio",
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.builder.io",
+      },
+    ],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+  },
 };
 
 module.exports = nextConfig;

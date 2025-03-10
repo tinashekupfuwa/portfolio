@@ -16,7 +16,6 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-clash: "ClashDisplay", sans-serif;
-  --padding-x: 5rem;
 }
 
 @theme inline {
@@ -57,7 +56,6 @@ body {
 main {
   flex: 1;
   width: 100%;
-  padding: 0 var(--padding-x);
   overflow-x: hidden;
 }
 
