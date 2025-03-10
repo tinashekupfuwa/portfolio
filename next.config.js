@@ -8,9 +8,6 @@ const nextConfig = {
   assetPrefix: "/portfolio/",
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
 };
 
 module.exports = nextConfig;
