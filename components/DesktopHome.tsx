@@ -3,7 +3,7 @@ import * as React from "react";
 import { HeroSection } from "./HeroSection";
 import { Signature } from "./Signature";
 
-function DesktopHome() {
+export default function DesktopHome() {
   return (
     <div className="h-screen bg-[#F6F5F5] dark:bg-[#1A1A1A] px-4 sm:px-8 md:px-20 pt-48 pb-28 overflow-hidden font-clash max-md:pt-25 max-md:pb-25">
       <div className="h-full flex flex-col">
@@ -20,5 +20,3 @@ function DesktopHome() {
     </div>
   );
 }
-
-export default DesktopHome;

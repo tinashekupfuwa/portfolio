@@ -8,13 +8,14 @@
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "ss01" on, "ss02" on, "ss03" on, "ss04" on, "ss05" on,
+    "ss06" on, "ss07" on;
+  font-variation-settings: "wght" 200 700;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-clash: "ClashDisplay", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, sans-serif;
 }
 
 @theme inline {
@@ -45,7 +46,6 @@ body {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-clash);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
