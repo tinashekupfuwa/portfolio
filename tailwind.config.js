@@ -8,14 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        clash: [
-          "ClashDisplay",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "sans-serif",
-        ],
+        clash: ["var(--font-clash)"],
       },
     },
   },
