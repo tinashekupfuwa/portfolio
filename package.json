@@ -12,10 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "next": "14.1.0",
-    "@builder.io/dev-tools": "latest",
-    "@builder.io/react": "latest",
-    "@builder.io/sdk": "latest"
+    "next": "14.1.0"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
